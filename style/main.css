@@ -1,11 +1,33 @@
-#container-fluid {
-    width: 900px;
-}
+
 h4 {
     font-family: var(--primary-font);
     color: var(--primary-color);
 }
-h1 {
+h3 {
+    font-size: 60px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: first baseline;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+
+}
+.about-style{
+    position: absolute;
+    margin-top: 40px;
+    padding: 16px;
+    width: 50%;
+    color: var(--secondary-color);
+    z-index: -1;
+    opacity: 50%;
+    transform: skewX(-32deg);
+}
+.project-style{
+    position: absolute;
+    margin-top: 40px;
+    padding: 16px;
+    width: 50%;
+    color: var(--third-color);
+    z-index: -1;
+    opacity: 50%;
+    transform: skewX(-32deg);
 }
