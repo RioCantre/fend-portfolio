@@ -1,74 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Righteous&display=swap');
-
-:root {
-    --primary-font: 'Righteous', cursive;
-    --secondary-font: 'Raleway', sans-serif;
-    --background-color: hsla(45, 69%, 90%, 1);
-    --primary-color: hsla(199, 48%, 19%, 1);
-    --secondary-color: hsla(45, 89%, 53%, 1);
-    --third-color: hsla(358, 74%, 65%, 1);
-    --hover-color: hsla(189, 53%, 56%, 1);
-
+#container-fluid {
+    width: 900px;
 }
-
-body {
-    background-color: var(--background-color);
-}
-#main-content {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 160px;
-    text-align: center;
-}
-#hero-content {
-    padding: 40px;
-    margin-top: 40px;
-
-}
-
-h1 {
+h4 {
     font-family: var(--primary-font);
-    font-size:  86px;
-    margin: 0;
     color: var(--primary-color);
 }
-h2 {
-    font-size: 36px;
-    font-family: var(--secondary-font);
-    font-weight: 300;
-    color: var(--primary-color);
-    margin-top: 0;
-}
-
-#social-media a  {
-    text-decoration: none;
-    font-size: 50px;
-    margin: 20px;
-    color: var(--primary-color);
-}
-#social-media a:hover {
-    color: var(--hover-color);
-}
-
-#hero-button {
-    padding: 40px;
-
-}
-.button {
-    padding: 26px 20px;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    width: 300px;
-    border-radius: 50px;
-}
-.button:hover {
-    background-color: var(--hover-color);
-    cursor: pointer;
-}
-.button a {
-    text-decoration: none;
-    color: var(--background-color);
-    font-family: var(--secondary-font);
+h1 {
+    display: flex;
+    justify-content: flex-start;
 }
