@@ -21,13 +21,13 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 200px;
     text-align: center;
     width: 900px;
 }
 #hero-content {
     padding: 40px;
-    margin-top: 30px;
+    margin-top: 25px;
 
 }
 
@@ -58,7 +58,7 @@ i {
 }
 @keyframes beat {
     0% {
-      transform: scale(1) rotate(-45deg);
+      transform: scale(1.5) rotate(-45deg);
     }
     50% {
       transform: scale(0.6) rotate(-45deg);

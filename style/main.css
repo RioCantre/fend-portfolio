@@ -3,13 +3,16 @@ h4 {
     font-family: var(--primary-font);
     color: var(--primary-color);
 }
+h4:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+}
 h3 {
     font-size: 60px;
     display: flex;
     justify-content: first baseline;
     font-family: var(--primary-font);
     color: var(--primary-color);
-
 }
 .about-style{
     position: absolute;
