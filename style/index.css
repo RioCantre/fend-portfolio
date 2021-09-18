@@ -9,6 +9,9 @@
     --secondary-color: hsla(45, 89%, 53%, 1);
     --third-color: hsla(358, 74%, 65%, 1);
     --hover-color: hsla(189, 53%, 56%, 1);
+    --button:hsla(259, 53%, 28%, 1);
+    --button-hover:  hsla(259, 45%, 49%, 1);
+
 
 }
 * {
@@ -20,14 +23,18 @@ body {
     background-color: var(--background-color);
     margin: auto;
     padding: 0;
+    height: 100vh;
 }
 #container-fluid {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 180px;
     text-align: center;
     width: 1000px;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 #hero-content {
     padding: 40px;

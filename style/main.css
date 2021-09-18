@@ -1,12 +1,30 @@
-
-
-h4 {
+section {
+    width: 100%;
+}
+.name {
     font-family: var(--primary-font);
     color: var(--primary-color);
+    font-size: 30px;
+
 }
-h4:hover {
+.name:hover {
     cursor: pointer;
     color: var(--hover-color);
+}
+
+.navbar {
+    position: fixed;
+    display: block;
+    top: 0;
+
+}
+.navbar a {
+    text-decoration: none;
+    margin: 5px;
+    color: var(--primary-color);
+}
+.navbar a:hover {
+    color: var(--secondary-color);
 }
 h3 {
     font-size: 60px;
@@ -28,8 +46,13 @@ h3 {
 }
 p {
     font-family: var(--secondary-font);
-    text-align: justify;
-    
+    text-align: justify; 
+}
+em {
+    font-weight: 600;
+}
+strong {
+    font-size: 13px;
 }
 .project-style{
     position: absolute;
@@ -63,6 +86,20 @@ h5 {
     font-family: var(--primary-font);
     font-weight: 600;
 }
+.view {
+    text-decoration: none;
+    padding: 20px 20px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    border-radius: 30px;
+}
+.view:hover {
+    color: var(--secondary-color);
+    background-color: var(--hover-color);
+}
 .contact-info {
     margin: 40px;
 }
@@ -86,4 +123,34 @@ h5 {
     50% {
       transform: scale(0.6) rotate(-45deg);
     }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: var(--button);
+    color: #FFF7EA;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 30px;
+    width: 80px;
+}
+
+#myBtn:hover {
+    background-color:var(--button-hover);
+}
+.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky-top + section {
+    padding-top: 50px;
 }

@@ -12,15 +12,23 @@
     <link rel="stylesheet" href="../style/index.css">
 </head>
 <body>
-    <nav>
-        <h4 class="mt-5 mx-5" onclick="window.location.href='../index.html'">
-            Rio Cantre
-        </h4>
-        
+    <nav class="navbar">
+        <a href="../index.html" class="nav-link" title="Home">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="#About" class="nav-link" title="About">
+            <i class="fas fa-user"></i>
+        </a>
+        <a href="#Project" class="nav-link" title="Project">
+            <i class="fas fa-laptop-code"></i>
+        </a>
+        <a href="#contact" class="nav-link" title="Contact">
+            <i class="fas fa-address-book"></i>
+        </a>
     </nav>
     <div id="container-fluid">
         <div class="row">
-            <section >
+            <section id="About" >
                 <hr class="about-style">
                 <h3 class="section_title mx-5">
                     About
@@ -28,12 +36,12 @@
                 <p class="p-3">
                     After quitting my full-time job, I took a step to seek a career change. I have more time at home and regain interest in
                     coding. As a self-taught, I mainly took courses that would help me learn proper ways to learn how to code effectively
-                    and efficiently, such as <strong>Udemy</strong> and <strong>Shecodes</strong>. Furthermore, I'm expanding my knowledge and discovering new ways to solve
+                    and efficiently, such as <em>Udemy</em> and <em>Shecodes</em>. Furthermore, I'm expanding my knowledge and discovering new ways to solve
                     problems, make codes work correctly, and tackle challenges that may help me gain more experience. Additionally, I
                     continued learning new skills and technologies that I could explore and venture into.
                 </p>
             </section>
-            <section class="container px-4">
+            <section class="container px-4" id="Project">
                 <hr class="project-style">
                 <h3 class="title mx-5">
                     Projects
@@ -44,21 +52,26 @@
                         <h5 class="mt-3"> Adventuristic </h5>
                         <p class="p-3 text-center"> 
                             A travel web app that let the user search for the desired destination, saves and remove the details of the journey.
-
+                            <br>
+                            <strong>Mainly built with HTML5, CSS, Sass, Webpack, Node.js, Express and selected APIs.</strong>
                         </p>
-                        <a href=""></a>
+                        <a class="view" href="https://github.com/RioCantre/project-capstone-travel-planner-app"> View in Github</a>
                     </div>
                     <div id="project-2" class="col-5 mx-3 ">
                         <img src="/assets/WeatherJournal.gif" alt="weather journal app" class="img-fluid" >
-                        <h5 class="mt-3"> Weather Journal </h5>
+                        <h5 class="mt-3"> Weather Journal App</h5>
                         <p class="p-3 text-center">
                             Weather journal app that shows the weather conditions while notes are saved as a journal entry.
+                            <br>
+                            <strong>Mainly built with HTML5, CSS, Node.js, Express and selected API.</strong>
                         </p>
+                        <a class="view" href="https://github.com/RioCantre/project-weather-journal-app"> View in Github</a>
                     </div>
                 </div>
             </section>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             <footer>
-                <div class="contact-info">
+                <div class="contact-info" id="contact">
                     <a href="https://github.com/RioCantre" target="_blank" title="Github">
                         <i class="fab fa-github-alt"></i>
                     </a>
@@ -75,5 +88,6 @@
             </footer>
         </div>
     </div>
+    <script src="../js/app.js"></script>
 </body>
 </html>
