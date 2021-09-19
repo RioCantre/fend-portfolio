@@ -1,27 +1,20 @@
 section {
     width: 100%;
 }
-.name {
-    font-family: var(--primary-font);
-    color: var(--primary-color);
-    font-size: 30px;
 
-}
-.name:hover {
-    cursor: pointer;
-    color: var(--hover-color);
-}
 
 .navbar {
     position: fixed;
     display: block;
     top: 0;
+    right: 0;
+    display: flex;
 
 }
 .navbar a {
     text-decoration: none;
-    margin: 5px;
     color: var(--primary-color);
+    font-size: 13px;
 }
 .navbar a:hover {
     color: var(--secondary-color);
@@ -67,6 +60,7 @@ strong {
 
 img {
     width: 450px;
+    height: 250px !important;
 }
 .first-row {
     padding: 10px;
@@ -77,6 +71,7 @@ img {
     margin-top: 30px;
     border: 1px solid var(--secondary-color);
     margin: auto;
+    height: 600px;
 
 }
 .project-description{
@@ -154,3 +149,23 @@ h5 {
 .sticky-top + section {
     padding-top: 50px;
 }
+
+@media (max-width: 991.98px)  {
+    .row {
+        display: block;
+        justify-content: center;
+        margin: 30px;    
+    }
+}
+@media (max-width: 575.98px) { 
+    .contact-info a{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .row {
+        display: block;
+        justify-content: center;
+        margin: 10px;  
+    }
+}
+
