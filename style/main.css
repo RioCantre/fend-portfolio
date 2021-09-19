@@ -58,10 +58,7 @@ strong {
     transform: skewX(-32deg);
 }
 
-img {
-    width: 450px;
-    height: 250px !important;
-}
+
 .first-row {
     padding: 10px;
 }
@@ -95,15 +92,20 @@ h5 {
     color: var(--secondary-color);
     background-color: var(--hover-color);
 }
+.author {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    padding: 10px;
+}
 .contact-info {
-    margin: 40px;
+    margin: 60px;
 }
 .contact-info a {
-    padding: 30px 20px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--primary-color);
-    margin: 30px;
+    margin: 10px;
 }
 .contact-info a i:hover {
     color: var(--hover-color);
@@ -150,22 +152,46 @@ h5 {
     padding-top: 50px;
 }
 
-@media (max-width: 991.98px)  {
+@media (max-width: 1030px)  {
+    .row {
+        margin: 5px; 
+        padding: 5px;   
+    }
+}
+@media(max-width: 682px) {
     .row {
         display: block;
-        justify-content: center;
-        margin: 30px;    
+    }
+    #project-1,
+    #project-2{
+        padding: 40px 80px;
+
     }
 }
 @media (max-width: 575.98px) { 
-    .contact-info a{
-        font-size: 20px;
+    .row {
         margin: 10px;
     }
-    .row {
-        display: block;
-        justify-content: center;
-        margin: 10px;  
+    #project-1,
+    #project-2{
+        padding: 50px 30px;
+        margin-left: 0;
+    }
+    h3 {
+        font-size: 50px;
     }
 }
+@media(max-width: 375px) {
+    #project-1,
+    #project-2{
+        padding: 30px 10px;
 
+    }
+    .contact-info a {
+        padding: 5px;
+        font-size: 16px;
+    }
+    .author{
+        font-size: 13px;
+    }
+}
