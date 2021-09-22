@@ -1,197 +1,192 @@
 section {
-    width: 100%;
+  width: 100%;
 }
-
 
 .navbar {
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    display: flex;
-
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  display: flex;
 }
 .navbar a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 13px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 13px;
 }
 .navbar a:hover {
-    color: var(--secondary-color);
-}
-h3 {
-    font-size: 60px;
-    display: flex;
-    justify-content: first baseline;
-    font-family: var(--primary-font);
-    color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-.about-style{
-    position: absolute;
-    margin-top: 40px;
-    padding: 16px;
-    width: 30%;
-    color: var(--secondary-color);
-    z-index: -1;
-    opacity: 50%;
-    transform: skewX(-32deg);
+h3 {
+  font-size: 60px;
+  display: flex;
+  justify-content: first baseline;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.about-style {
+  position: absolute;
+  margin-top: 40px;
+  padding: 16px;
+  width: 30%;
+  color: var(--secondary-color);
+  z-index: -1;
+  opacity: 50%;
+  transform: skewX(-32deg);
 }
 p {
-    font-family: var(--secondary-font);
-    text-align: justify; 
+  font-family: var(--secondary-font);
+  text-align: justify;
 }
 em {
-    font-weight: 600;
+  font-weight: 600;
 }
 strong {
-    font-size: 13px;
+  font-size: 13px;
 }
-.project-style{
-    position: absolute;
-    margin-top: 40px;
-    padding: 16px;
-    width: 30%;
-    color: var(--third-color);
-    z-index: -1;
-    opacity: 50%;
-    transform: skewX(-32deg);
+.project-style {
+  position: absolute;
+  margin-top: 40px;
+  padding: 16px;
+  width: 30%;
+  color: var(--third-color);
+  z-index: -1;
+  opacity: 50%;
+  transform: skewX(-32deg);
 }
-
 
 .first-row {
-    padding: 10px;
+  padding: 10px;
 }
 #project-1,
-#project-2{
-    padding: 40px 30px;
-    margin-top: 30px;
-    border: 1px solid var(--secondary-color);
-    margin: auto;
-    height: 600px;
-
+#project-2 {
+  padding: 40px 30px;
+  margin-top: 30px;
+  border: 1px solid var(--secondary-color);
+  margin: auto;
+  height: 600px;
 }
-.project-description{
-    padding: 10px;
+.project-description {
+  padding: 10px;
 }
 h5 {
-    font-family: var(--primary-font);
-    font-weight: 600;
+  font-family: var(--primary-font);
+  font-weight: 600;
 }
 .view {
-    text-decoration: none;
-    padding: 20px 20px;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    font-size: 16px;
-    font-family: var(--secondary-font);
-    border-radius: 30px;
+  text-decoration: none;
+  padding: 20px 20px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: 16px;
+  font-family: var(--secondary-font);
+  border-radius: 30px;
 }
 .view:hover {
-    color: var(--secondary-color);
-    background-color: var(--hover-color);
+  color: var(--secondary-color);
+  background-color: var(--hover-color);
 }
 .author {
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    padding: 10px;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  padding: 10px;
 }
 .contact-info {
-    margin: 60px;
+  margin: 60px;
 }
 .contact-info a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--primary-color);
-    margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--primary-color);
+  margin: 10px;
 }
 .contact-info a i:hover {
-    color: var(--hover-color);
-    transform: rotate(0deg);
-    animation-name: beat;
-    animation-duration: 1s;
+  color: var(--hover-color);
+  transform: rotate(0deg);
+  animation-name: beat;
+  animation-duration: 1s;
 }
 @keyframes beat {
-    0% {
-      transform: scale(1.5) rotate(-45deg);
-    }
-    50% {
-      transform: scale(0.6) rotate(-45deg);
-    }
+  0% {
+    transform: scale(1.5) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+  }
 }
 
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 100;
-    font-size: 13px;
-    border: none;
-    outline: none;
-    background-color: var(--button);
-    color: #FFF7EA;
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 30px;
-    width: 80px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: var(--button);
+  color: #fff7ea;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 30px;
+  width: 80px;
 }
 
 #myBtn:hover {
-    background-color:var(--button-hover);
+  background-color: var(--button-hover);
 }
 .sticky-top {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .sticky-top + section {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
-@media (max-width: 1030px)  {
-    .row {
-        margin: 5px; 
-        padding: 5px;   
-    }
+@media (max-width: 1030px) {
+  .row {
+    margin: 5px;
+    padding: 5px;
+  }
 }
-@media(max-width: 682px) {
-    .row {
-        display: block;
-    }
-    #project-1,
-    #project-2{
-        padding: 40px 80px;
-
-    }
+@media (max-width: 682px) {
+  .row {
+    display: block;
+  }
+  #project-1,
+  #project-2 {
+    padding: 40px 80px;
+  }
 }
-@media (max-width: 575.98px) { 
-    .row {
-        margin: 10px;
-    }
-    #project-1,
-    #project-2{
-        padding: 50px 30px;
-        margin-left: 0;
-    }
-    h3 {
-        font-size: 50px;
-    }
+@media (max-width: 575.98px) {
+  .row {
+    margin: 10px;
+  }
+  #project-1,
+  #project-2 {
+    padding: 50px 30px;
+    margin-left: 0;
+  }
+  h3 {
+    font-size: 50px;
+  }
 }
-@media(max-width: 375px) {
-    #project-1,
-    #project-2{
-        padding: 30px 10px;
-
-    }
-    .contact-info a {
-        padding: 5px;
-        font-size: 16px;
-    }
-    .author{
-        font-size: 13px;
-    }
+@media (max-width: 375px) {
+  #project-1,
+  #project-2 {
+    padding: 30px 10px;
+  }
+  .contact-info a {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .author {
+    font-size: 13px;
+  }
 }
